@@ -10,20 +10,22 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #fff;
+  background: #adff2f;
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  background-color: blue;
 }
 .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
+  background-color: yellow;
 }
 
 .menu {
@@ -50,7 +52,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: rgba(135, 206, 250, 0.5);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -59,7 +61,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #444;
+  background: #87ceeb;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -91,7 +93,7 @@
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: #fff;
+  color: #adff2f;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
@@ -120,7 +122,8 @@
 }
 
 body {
-  background: #444;
+  background: url(./img/home2.jpg);
+  background-size: cover;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -129,8 +132,12 @@ body {
 }
 body#bg-img {
   background: url(./img/home1.jpg);
-  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
   background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 body#bg-img:after {
   content: "";
@@ -140,7 +147,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(135, 206, 250, 0.2);
 }
 
 h1,
@@ -153,18 +160,17 @@ h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
-  padding: 0.2rem 1rem;
 }
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background: rgba(135, 206, 250, 0.5);
 }
 
 a {
-  color: #fff;
+  color: #adff2f;
   text-decoration: none;
 }
 
@@ -175,7 +181,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #adff2f;
 }
 
 main {
